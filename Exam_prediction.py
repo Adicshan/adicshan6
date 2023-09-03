@@ -10,7 +10,6 @@ from sklearn.impute import SimpleImputer
 file_path = os.path.dirname(os.path.abspath(__file__))
 csv_path = os.path.join(file_path, 'Exam_data.csv')
 df = pd.read_csv(csv_path)
-
 toughness_mapping = {
     'UPSC_IIT_AIIMS_CAT': 0,
     'NDA_NEET_CLAT_SSC': 1,
