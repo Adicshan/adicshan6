@@ -26,7 +26,6 @@ const pythonScriptPath = path.join(__dirname, 'Exam_prediction.py');
   
   const ExamProcess = spawn('python', [pythonScriptPath, toughness, hour, consist, syllabus, time]);
   
-
 ExamProcess.stdout.on('data',(data)=>{
 const output= data.toString();
 console.log('Python output:',output);
