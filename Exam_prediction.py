@@ -1,5 +1,6 @@
 import os
 import sys
+print(sys.executable)
 import math
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
