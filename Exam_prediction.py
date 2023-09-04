@@ -1,4 +1,5 @@
-#!/usr/bin/python
+#!/opt/render/.local/bin/python3.7
+
 import os
 # Set the PYTHONUSERBASE environment variable to the user-specific site-packages directory
 os.environ['PYTHONUSERBASE'] = '/opt/render/.local'
