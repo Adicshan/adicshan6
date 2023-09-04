@@ -1,14 +1,13 @@
-#!/opt/render/.local/bin/python3.7
-
 import os
-target_path = "/usr/local/lib/python3.7/dist-packages"
+import sys
+
+sys.path.append("/opt/render/.local/lib/python3.7/site-packages")
+target_path = "/opt/render/.local/lib/python3.7/site-packages"
 
 if "pandas" in os.listdir(target_path):
     print("Pandas is installed in", target_path)
 else:
-    print("nahi hai isme")
-import sys
-
+    print("Pandas is not installed in", target_path)
 
 import math
 import pandas as pd
