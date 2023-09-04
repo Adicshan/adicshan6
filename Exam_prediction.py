@@ -1,6 +1,10 @@
+#!/usr/bin/python
 import os
+
+# Set the PYTHONUSERBASE environment variable to the user-specific site-packages directory
+os.environ['PYTHONUSERBASE'] = '/opt/render/.local'
 import sys
-print(sys.executable)
+
 import importlib
 def is_pandas_installed():
     try:
