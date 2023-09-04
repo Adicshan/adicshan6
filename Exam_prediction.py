@@ -5,7 +5,7 @@ import os
 os.environ['PYTHONUSERBASE'] = '/opt/render/.local'
 import sys
 
-sys.path.append('/opt/render/.local/lib/python3.7/site-packages')
+sys.path.append('/opt/render/local/lib/python3.7/site-packages')
 print(sys.path)
 import importlib
 def is_pandas_installed():
