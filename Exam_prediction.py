@@ -2,7 +2,6 @@ import os
 import sys
 print(sys.executable)
 import importlib
-
 def is_pandas_installed(executable_path):
     try:
         importlib.import_module('pandas')
