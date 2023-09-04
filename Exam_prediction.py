@@ -1,10 +1,13 @@
 import os
 import sys
-try:
-    import pandas
-    print("Pandas is installed in the Python environment.")
-except ImportError:
-    print("Pandas is not installed in the Python environment.")
+import os
+
+target_path = "/opt/render/.local/lib/python3.7/site-packages/pandas"
+
+if os.path.exists(target_path):
+    print("Pandas is installed in", target_path)
+else:
+    print("Pandas is not installed in", target_path)
 
 
 import math
