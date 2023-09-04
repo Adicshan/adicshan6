@@ -15,7 +15,6 @@ if is_pandas_installed():
 else:
     print("Pandas is not installed.")
 
-
 import math
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
