@@ -2,7 +2,7 @@ import os
 import sys
 import os
 
-target_path = "/opt/render/.local/lib/python3.7/site-packages/pandas"
+target_path = "/opt/render/.local/lib/python3.7/site-packages"
 
 if os.path.exists(target_path):
     print("Pandas is installed in", target_path)
