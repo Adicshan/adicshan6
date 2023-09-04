@@ -1,24 +1,14 @@
 #!/opt/render/.local/bin/python3.7
 
 import os
-# Set the PYTHONUSERBASE environment variable to the user-specific site-packages directory
-os.environ['PYTHONUSERBASE'] = '/opt/render/.local'
+target_path = "/usr/local/lib/python3.7/dist-packages"
+
+if "pandas" in os.listdir(target_path):
+    print("Pandas is installed in", target_path)
+else:
+    print("nahi hai isme")
 import sys
 
-sys.path.append('/opt/render/local/lib/python3.7/site-packages')
-print(sys.path)
-import importlib
-def is_pandas_installed():
-    try:
-        importlib.import_module('pandas')
-        return True
-    except ImportError:
-        return False
-
-if is_pandas_installed():
-    print("Pandas is installed.")
-else:
-    print("Pandas is not installed.")
 
 import math
 import pandas as pd
