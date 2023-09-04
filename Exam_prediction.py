@@ -2,19 +2,19 @@ import os
 import sys
 print(sys.executable)
 import importlib
-def is_pandas_installed(executable_path):
+
+def is_pandas_installed():
     try:
         importlib.import_module('pandas')
         return True
     except ImportError:
         return False
 
-python_executable_path = '/usr/bin/python'  # Replace with your actual Python executable path
-
-if is_pandas_installed(python_executable_path):
-    print("pandas is installed in", python_executable_path)
+if is_pandas_installed():
+    print("Pandas is installed.")
 else:
-    print("pandas is not installed in", python_executable_path)
+    print("Pandas is not installed.")
+
 
 import math
 import pandas as pd
